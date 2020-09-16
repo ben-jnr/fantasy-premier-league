@@ -7,7 +7,7 @@ var app = express();
 app.use(cors());
 
 
-app.get('/', function(req, res){
+app.get('/fpl', function(req, res){
     	url = 'https://www.iplt20.com/matches/results/men/2019';
     	axios.get(url)
     	.then((a)=>{

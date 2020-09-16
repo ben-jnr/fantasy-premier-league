@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Permanent+Marker&family=Varela+Round&display=swap');
+
+#Bar{
+    letter-spacing: 1px;
+    font-family: 'Patua One', cursive;
+    color:rgba(2,2,91,1);
+    height:120vh;
+    top:8vh !important;
+    position:absolute;
+    width:12vw;
+    left:-12vw;
+    background-color:#e5e5e5;
+}
+
+.Options {
+    padding-top:4vh;
+    padding-bottom:4vh;
+    text-align: center;
+    line-height:100%;
+    vertical-align: middle;
+    height: 2%;
+}
+
+.Options:hover{
+    background-color:#f1f1f1;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #Bar{
+        width:40vw;
+        left:-40vw;
+    }
+}

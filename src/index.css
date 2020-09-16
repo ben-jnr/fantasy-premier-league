@@ -1,0 +1,9 @@
+body,html{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(51,51,107,1) 70%, rgba(51,56,107,1) 100%); 
+    width:100%;
+    height:fit-content !important;
+    margin: 0% !important;
+    z-index:1000;
+    overflow-x: hidden;
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Permanent+Marker&family=Varela+Round&display=swap');
+
+
+#Leaderboard {
+    color:#f1f1f1;
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 5vh;
+    letter-spacing: 1px;
+    font-family: 'Patua One', cursive;
+    z-index:1000;
+    height:100%;
+}
+
+#IplLeaderboard{
+    padding-top:10vh !important;
+}
+
+#IplLeaderboardTable, #FantasyLeaderboardTable{
+    text-align: center;
+    font-size:0.9em;
+    font-family: 'Varela Round', sans-serif;
+    width:80%;
+    margin-top: 5vh;
+    margin-left: 10%;
+    border-radius: 7px;
+    background-color:rgba(255,255,255,0.05);    
+    padding:15px;
+    padding-bottom: 10px !important;
+}
+
+#IplLeaderboardTable td, #FantasyLeaderboardTable td{
+    width:15%;
+}
+
+#IplLeaderboardTable td:nth-child(1), #FantasyLeaderboardTable td:nth-child(1){
+    width:40%;
+    text-align: left;
+    padding-left: 2vw;
+}
+
+#IplLeaderboardTableHead, #FantasyLeaderboardTableHead{
+    color:cyan;
+    height: 6vh !important;
+    line-height: 6vh !important;
+    vertical-align: middle !important; 
+    padding-bottom: 5vh;
+}
+
+.first{
+    font-size:0.8em;
+    background-color:rgba(255,255,255,0.025);
+    height: 5vh !important;
+    line-height: 5vh !important;
+    vertical-align: middle !important;
+}
+
+.second{
+    font-size:0.8em;
+    height: 5vh !important;
+    line-height: 5vh !important;
+    vertical-align: middle !important;   
+}
