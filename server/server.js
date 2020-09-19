@@ -8,7 +8,7 @@ app.use(cors());
 
 
 app.get('/fpl', function(req, res){
-    	url = 'https://www.iplt20.com/matches/results/men/2019';
+		url = 'https://www.iplt20.com/matches/results/men/2020';
     	axios.get(url)
     	.then((a)=>{
                 var $ = cheerio.load(a.data);

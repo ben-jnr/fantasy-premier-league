@@ -1,6 +1,6 @@
 import React from 'react';
-import './Navbar.css';
-import Hamburger from './Hamburger.svg';
+import './Styles/Navbar.css';
+import Hamburger from './Images/Hamburger.svg';
 import $ from 'jquery';
 
 function Navbar() {
@@ -20,8 +20,8 @@ function Navbar() {
 
   return <>
     <div id="Navbar">
-        <button id="HamburgerButton">
-          <img id="Hamburger" src={Hamburger} alt="" onClick={MenuOpenClose}/>
+        <button id="HamburgerButton" onClick={MenuOpenClose}>
+          <img id="Hamburger" src={Hamburger} alt=""/>
         </button>
         Fantasy Premier League
     </div>

@@ -4,7 +4,7 @@
     letter-spacing: 1px;
     font-family: 'Patua One', cursive;
     color:rgba(2,2,91,1);
-    height:120vh;
+    height:fit-content;
     top:8vh !important;
     position:absolute;
     width:12vw;
@@ -13,8 +13,8 @@
 }
 
 .Options {
-    padding-top:4vh;
-    padding-bottom:4vh;
+    padding-top:3vh;
+    padding-bottom:3vh;
     text-align: center;
     line-height:100%;
     vertical-align: middle;
@@ -23,12 +23,13 @@
 
 .Options:hover{
     background-color:#f1f1f1;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
     
     #Bar{
-        width:40vw;
-        left:-40vw;
+        width:42vw;
+        left:-42vw;
     }
 }

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Permanent+Marker&family=Varela+Round&display=swap');
+
+    /*font-family: 'Varela Round', sans-serif;*/
+    /*font-family: 'Permanent Marker', cursive;*/
+
+#MatchesComponent{
+    display:none;
+}
+
+#ContendersComponent{
+    display:none;
+}
+
+* {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }

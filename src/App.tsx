@@ -1,8 +1,10 @@
 import React, { useState,useEffect } from 'react';
 import axios from 'axios';
-import './App.css';
+import './Styles/App.css';
 import Navbar from './Navbar';
 import Leaderboard from './Leaderboard';
+import Matches from './Matches';
+import Contenders from './Contenders';
 import Bar from './Bar';
 import $ from 'jquery';
 
@@ -13,12 +15,12 @@ function App() {
   useEffect(()=>{
     axios.get("/fpl")
     .then((res)=>{
-      setData(res.data);
+      setData(res.data)
     })
     .catch((err)=>console.log("error"));
   },[]);
 
-  const MenuOpenClose=()=>{
+  const MenuClose=()=>{
     if($('#Bar').css('left') === "0px") {
       $('#Bar').animate({
         left: '-' + $('#Bar').css('width')
@@ -34,8 +36,14 @@ function App() {
       <div id="NavbarComponent">
           <Navbar />
       </div>
-      <div id="LeaderboardComponent" onClick={MenuOpenClose}>
+      <div id="LeaderboardComponent" onClick={MenuClose}>
         <Leaderboard data={data}/>
+      </div>
+      <div id="MatchesComponent" onClick = {MenuClose}>
+        <Matches data={data}/>
+      </div>
+      <div id="ContendersComponent" onClick = {MenuClose}>
+        <Contenders/>
       </div>
     </div>
   );
