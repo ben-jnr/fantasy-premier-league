@@ -13,7 +13,7 @@ function App() {
   const [data,setData] = useState({});
 
   useEffect(()=>{
-    axios.get("http://ec2-13-232-104-42.ap-south-1.compute.amazonaws.com/fpl")
+    axios.get("/fpl")
     .then((res)=>{
 	console.log(res.data);
       setData(res.data)
